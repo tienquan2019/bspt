@@ -1,6 +1,6 @@
 rm -rf runblockspeedtest.x
 clear
-echo "đang chạy chặn speedtest"
+echo "Đang cài chặn speedtest"
 echo -e ""
 sleep 5
 sudo apt install iptables-persistent netfilter-persistent
@@ -159,7 +159,7 @@ systemctl restart netfilter-persistent
 systemctl enable netfilter-persistent
 systemctl status netfilter-persistent
 clear
-echo " chặn speedtest"
+echo " Đã cài xong chặn speedtest"
 echo -e ""
 sleep 3
 clear
