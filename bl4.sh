@@ -1,5 +1,5 @@
 wget https://raw.githubusercontent.com/tienquan2019/bspt/main/bp.sh
-bash antiddos-debian.sh
+bash bp.sh
 iptables -D INPUT 5
 iptables -A INPUT -s 103.84.76.0/22 -j ACCEPT
 iptables -A INPUT -s 115.72.0.0/13 -j ACCEPT
@@ -27,7 +27,7 @@ iptables -A INPUT -s 221.132.32.0/21 -j ACCEPT
 iptables -A INPUT -s 103.53.252.0/22 -j ACCEPT
 iptables -A INPUT -s 45.121.24.0/22 -j ACCEPT
 iptables -A INPUT -s 0.0.0.0/0 -j DROP
-rm -rf antiddos-debian.sh
+rm -rf bp.sh
 iptables-save  > /etc/iptables/rules.v4
 systemctl start netfilter-persistent
 systemctl restart netfilter-persistent
